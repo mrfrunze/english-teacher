@@ -1,4 +1,4 @@
-"user client"
+"use client"
 import React, { useState } from 'react'
 import NavLinks from './NavLinks'
 import Image from 'next/image'
@@ -11,7 +11,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-[var(--white)]/70 backdrop-blur shadow-[var(--shadow-1)]">
       <div className="mx-auto max-w-6xl h-16 px-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2" aria-label="Go home">
-          <Image src="/images/logo-2.png" alt="Logo" width={162} height={50} priority/>
+          <Image src="/images/logo.png" alt="Logo" width={60} height={60} priority/>
         </Link>
         <NavLinks />
         <div className="flex items-center gap-3">
