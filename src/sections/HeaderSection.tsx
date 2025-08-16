@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Nav from "../components/Nav";
 import { navLinks } from "../data/navLinks";
 import { FaBookOpenReader, FaBook  } from "react-icons/fa6";
