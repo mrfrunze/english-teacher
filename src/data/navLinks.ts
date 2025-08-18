@@ -6,6 +6,7 @@ export type NavItem = {
 export const navLinks: readonly NavItem[] = [
   { label: 'Home', to: 'hero' },
   { label: 'About', to: 'about' },
+  { label: 'Success', to: 'success' },
   { label: 'Service', to: 'services' },
   { label: 'Contact', to: 'contact' },
 ];

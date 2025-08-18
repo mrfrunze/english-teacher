@@ -1,11 +1,6 @@
 import { motion } from "framer-motion";
 import { baseMotion, fadeIn, slideUp, withDelay, slideLeft, slideRight } from "../utils/motionPresets";
-import {
-  FaChalkboardUser,
-  FaRegComments,
-  FaChartLine,
-  FaCrown,
-} from "react-icons/fa6";
+import {FaCrown,} from "react-icons/fa6";
 import { avatar, flagGb } from "../assets/images";
 import { aboutFeatures } from "../data/features";
 import FeatureItem from "../components/FeatureItem";
