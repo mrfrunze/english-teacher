@@ -29,7 +29,7 @@ export const stats: Stat[] = [
   },
   {
     id: "s4",
-    value: "7+",
+    value: "10+",
     label: "Years Teaching",
     icon: <FaCalendarCheck />,
   },

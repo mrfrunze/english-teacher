@@ -17,6 +17,9 @@
   --color-white: #ffffff;
   --gradient-about: linear-gradient(90deg, #f3eefe 0%, #ffe9d6 100%);
 
+  --color-burnt-orange: #e36a2e;
+  --color-teal-brand: #18b9ae;
+
   --rgb-rich-black-fogra-29: 18 18 23;
   --rgb-black: 0 0 0;
   --rgb-white: 255 255 255;
@@ -25,7 +28,7 @@
   --font-rubik: "Rubik", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-dm-sans: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 
-  --space-section: 80px;
+  --space-section: clamp(40px, calc(20.54px + 5.41vw), 80px);;
   --header-h: 85px;
 
 }
@@ -138,18 +141,18 @@
   .h1 {
     @apply font-bold;
     line-height: 1.4;
-    font-size: 65px;
+    font-size: clamp(32px, calc(16px + 4.5vw), 65px);
   }
 
   .h2 {
     line-height: 1.6;
-    font-size: 30px;
+    font-size: clamp(24px, calc(12px + 2.6vw), 40px);
   }
 
   .h3 {
     color: var(--color-onyx);
     line-height: 1.3;
-    font-size: 24px;
+    font-size: clamp(20px, calc(10px + 1.6vw), 28px);
   }
 
   .section-text,
@@ -165,5 +168,23 @@
     padding-inline: 15px;
     max-width: 950px;
     width: 100%;
+  }
+
+  @keyframes stat-accent-pulse {
+    0%, 100% { background-color: var(--color-mango-tango); }
+    50%      { background-color: var(--color-teal-brand); }
+  }
+
+  /* base accent bar color (if animation is off) */
+  .stat-accent { background-color: var(--color-mango-tango); }
+
+  /* animated variant */
+  .stat-accent--pulse {
+    animation: stat-accent-pulse 2.2s ease-in-out infinite;
+  }
+
+  /* respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .stat-accent--pulse { animation: none; }
   }
 }

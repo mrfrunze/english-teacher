@@ -29,7 +29,8 @@ export default function StatCard({ icon, value, label }: Props) {
       </div>
 
       {/* bottom accent bar */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2 rounded-b-2xl bg-[var(--color-mango-tango)]" />
+      {/* <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2 rounded-b-2xl bg-[var(--color-mango-tango)]" /> */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2 rounded-b-2xl stat-accent stat-accent--pulse" />
     </div>
   );
 }

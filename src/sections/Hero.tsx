@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="bg-[var(--color-white)] py-[var(--space-section)]">
+      className="bg-[var(--color-white)] py-[var(--space-section)] pt-[95px]">
       <div className="container mx-auto grid items-center justify-between gap-10 [@media(min-width:1100px)]:grid-cols-2">
         
 

@@ -8,7 +8,7 @@ type Props = {
 
 export default function FeatureItem({ icon, title, text }: Props) {
   return (
-    <li className="flex items-start gap-4">
+    <li className="flex justify-center [@media(min-width:1100px)]:justify-start gap-4">
       <span className="grid h-12 w-12 place-items-center rounded-full bg-[var(--color-floral-white)] shadow">
         <span className="text-xl leading-none">{icon}</span>
       </span>

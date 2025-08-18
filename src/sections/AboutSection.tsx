@@ -16,7 +16,7 @@ const AboutSection = () => {
           {...baseMotion}
           variants={slideLeft}
           transition={{ ...withDelay(0.5), ease: "easeOut" }}
-          className="relative order-1 flex justify-center [@media(min-width:1100px)]:order-none"
+          className="relative order-1 flex justify-center  [@media(min-width:1100px)]:order-none"
         >
           <img
             src={avatar}
@@ -28,27 +28,27 @@ const AboutSection = () => {
           {...baseMotion}
           variants={slideRight}
           transition={{ ...withDelay(0.5), ease: "easeOut" }}
-          className="text-left"
+          className="mx-auto justify-self-center text-center max-w-[768px] [@media(min-width:1100px)]:max-w-[100%] [@media(min-width:1100px)]:text-left [@media(min-width:1100px)]:justify-self-start"
         >
           <p
-            className="mb-2 uppercase tracking-wide"
+            className="mb-2 uppercase tracking-wide text-center [@media(min-width:1100px)]:text-left"
             style={{ fontFamily: "var(--font-rubik)", color: "var(--color-mango-tango)" }}
           >
             Who I am
           </p>
 
           <h2
-            className="mb-4 font-bold [@media(min-width:1100px)]:text-[42px] text-[36px]"
+            className="mb-4 font-bold text-[36px] text-center [@media(min-width:1100px)]:text-left [@media(min-width:1100px)]:text-[42px]"
             style={{ fontFamily: "var(--font-poppins)", lineHeight: 1.2, color: "var(--color-rich-black-fogra-29)" }}
           >
             A patient, supportive English tutor for real-life speaking
           </h2>
 
-          <p className="section-text max-w-prose">
+          <p className="section-text mt-3 [@media(min-width:1100px)]:mx-0 [@media(min-width:1100px)]:text-left">
             I’m Lynette, a TEFL-certified English tutor. My lessons are relaxed, well-structured,
             and tailored to your goals — pronunciation, fluency, or building vocabulary.
           </p>
-          <p className="section-text max-w-prose mt-3">
+          <p className="section-text mt-3 [@media(min-width:1100px)]:mx-0 [@media(min-width:1100px)]:text-left">
             You’ll practice speaking from day one and get clear feedback each week,
             so you make steady progress and feel confident in real conversations.
           </p>
@@ -58,7 +58,7 @@ const AboutSection = () => {
             {...baseMotion}
             variants={fadeIn}
             transition={{ ...withDelay(2, 0.2, 0.5), ease: [0.22, 1, 0.36, 1] }}
-            className="mt-6 space-y-5"
+            className="mt-6 space-y-5 text-left mx-auto max-w-[510px] [@media(min-width:1100px)]:max-w-[100%] [@media(min-width:1100px)]:mx-0"
           >
             {aboutFeatures.map((f, i) => (
               <motion.div
@@ -72,7 +72,7 @@ const AboutSection = () => {
             ))}
           </motion.ul>
           {/* badges: Super Tutor + flags */}
-          <div className="mt-6 flex items-center gap-3">
+          <div className="mt-6 flex items-center justify-center gap-3 [@media(min-width:1100px)]:justify-start">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 shadow">
               <FaCrown className="text-[var(--color-gambog)]" />
               <span className="text-sm" style={{ fontFamily: "var(--font-rubik)" }}>
