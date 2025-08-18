@@ -15,6 +15,7 @@
   --color-onyx: #3b3b3b;
   --color-black: #000000;
   --color-white: #ffffff;
+  --gradient-about: linear-gradient(90deg, #f3eefe 0%, #ffe9d6 100%);
 
   --rgb-rich-black-fogra-29: 18 18 23;
   --rgb-black: 0 0 0;
