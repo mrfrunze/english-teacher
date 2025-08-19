@@ -5,6 +5,7 @@ import HeaderSection from "./sections/HeaderSection";
 import Hero from "./sections/Hero";
 import About from "./sections/AboutSection";
 import Success from "./sections/SuccessSection"
+import Testimonial from "./sections/Testimonial";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -15,6 +16,7 @@ function App() {
         <Hero/>
         <About/>
         <Success />
+        <Testimonial/>
       </main>
       <FooterSection />
       <Modal open={open} onClose={() => setOpen(false)}>

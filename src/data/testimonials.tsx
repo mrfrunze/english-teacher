@@ -1,4 +1,4 @@
-
+import { adam, ambre, angel, derek, erkan, esteban, fatma, lulian, maria, oleg, olena, tuan, wong } from "../assets/images";
 
 
 export type Testimonial = {
@@ -22,7 +22,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     text:
       "A very high-level teacher. She works well with beginners and intermediate students and adapts a special system for each learner. I recommend Lynette.",
-    avatarKey: null,
+    avatarKey: oleg,
     origin: "preply",
   },
   // 2
@@ -34,7 +34,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     text:
       "She is kind and lovely. I enjoyed meeting her and will continue in her class!",
-    avatarKey: null,
+    avatarKey: angel,
     origin: "preply",
   },
   // 3
@@ -46,7 +46,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     text:
       "I really enjoyed being Lynette’s student. She is not only an amiable English teacher but also a very sophisticated person. Highly recommended.",
-    avatarKey: null,
+    avatarKey: derek,
     origin: "preply",
   },
   // 4
@@ -58,7 +58,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     text:
       "Thank you so much, Lynette, for the great teaching! Your sensitivity, tactfulness, intelligence, and professionalism are invaluable to me.",
-    avatarKey: null,
+    avatarKey: olena,
     origin: "preply",
   },
   // 5
@@ -70,7 +70,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     text:
       "Lynette is a VERY good English teacher. She helped my little girl master English. Caring, kind and patient — truly helpful.",
-    avatarKey: null,
+    avatarKey: tuan,
     origin: "preply",
   },
   // 6
@@ -94,7 +94,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     text:
       "A very wise and good person, and at the same time a great teacher. Worth recommending — I highly recommend Lynette as an English teacher.",
-    avatarKey: null,
+    avatarKey: adam,
     origin: "preply",
   },
   // 8
@@ -106,7 +106,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     text:
       "Lynette is a very good English teacher. Her lessons are easy and fun and make me feel comfortable speaking English.",
-    avatarKey: null,
+    avatarKey: fatma,
     origin: "preply",
   },
   // 9
@@ -130,7 +130,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     text:
       "It was a good lesson. Lynette is a good teacher. Unfortunately, the internet connection didn’t work well that day.",
-    avatarKey: null,
+    avatarKey: maria,
     origin: "preply",
   },
   // 11
@@ -142,7 +142,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     text:
       "Not only a great instructor but also a wonderful human being — full of energy and empathy. She guides students with passion. One of the best.",
-    avatarKey: null,
+    avatarKey: esteban,
     origin: "preply",
   },
   // 12
@@ -166,7 +166,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     text:
       "It’s fun and relaxing — exactly what I needed!",
-    avatarKey: null,
+    avatarKey: lulian,
     origin: "preply",
   },
   // 14
@@ -202,7 +202,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     text:
       "A very good teacher. My Form 3 daughter can’t wait to reserve a class after today’s trial lesson 😄",
-    avatarKey: null,
+    avatarKey: wong,
     origin: "preply",
   },
   // 17
@@ -213,7 +213,7 @@ export const testimonials: Testimonial[] = [
     dateISO: "2022-03-23",
     rating: 5,
     text: "Good teacher!",
-    avatarKey: null,
+    avatarKey: ambre,
     origin: "preply",
   },
   // 18
@@ -225,7 +225,7 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     text:
       "A great teacher and person — patient and attentive. Lessons are effective and fun; our conversations helped me a lot.",
-    avatarKey: null,
+    avatarKey: erkan,
     origin: "preply",
   },
 ];
