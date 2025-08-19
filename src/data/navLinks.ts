@@ -7,6 +7,6 @@ export const navLinks: readonly NavItem[] = [
   { label: 'Home', to: 'hero' },
   { label: 'About', to: 'about' },
   { label: 'Success', to: 'success' },
-  { label: 'Service', to: 'services' },
+  { label: 'Testimonial', to: 'testimonials' },
   { label: 'Contact', to: 'contact' },
 ];
