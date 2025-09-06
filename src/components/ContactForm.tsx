@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 
-const ACCESS_KEY = "" // empty for now, insert Web3Forms key later
+const ACCESS_KEY = "01dc17ab-581f-4ad4-93f1-58ffb9aff1c2" // empty for now, insert Web3Forms key later
 const MIN_DELAY = 1200 // anti-bot: minimum time to submission (ms)
 
 function isEmail(v: string) {
