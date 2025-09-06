@@ -4,12 +4,7 @@ import { navLinks } from "../data/navLinks";
 import { FaBookOpenReader, FaBook  } from "react-icons/fa6";
 import { logo } from "../assets/images";
 
-
-type Props = {
-  onOpenModal: () => void;
-};
-
-const HeaderSection = ({ onOpenModal }: Props) => {
+const HeaderSection = () => {
   const [scrolled, setScrolled] = useState(false);
    const [isOpen, setIsOpen] = useState(false);
 
@@ -49,7 +44,6 @@ const HeaderSection = ({ onOpenModal }: Props) => {
         <Nav 
           links={navLinks} 
           offset={offset} 
-          onOpenModal={onOpenModal} 
           isOpen={isOpen} 
           onClose={() => setIsOpen(false)}
         />

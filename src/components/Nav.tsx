@@ -4,12 +4,11 @@ import type { NavItem } from "../data/navLinks";
 type Props = {
   links: readonly NavItem[];
   offset?: number;
-  onOpenModal: () => void;
   isOpen: boolean;
   onClose: () => void;
 };
 
-const Nav = ({ links, offset = -80, onOpenModal, isOpen, onClose }: Props) => {
+const Nav = ({ links, offset = -80, isOpen, onClose }: Props) => {
   return (
     <>
       <nav className="hidden md:flex items-center gap-6 flex-1">
@@ -34,7 +33,6 @@ const Nav = ({ links, offset = -80, onOpenModal, isOpen, onClose }: Props) => {
         <button
           type="button"
           className="btn btn-secondary"
-          onClick={onOpenModal}
         >
           Get Started
         </button>

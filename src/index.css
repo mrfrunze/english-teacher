@@ -100,7 +100,21 @@
     flex: 1;
   }
 
+  input,
+  textarea {
+    @apply w-full rounded px-4 py-3 transition
+           border border-[var(--color-sonic-silver)];
+  }
+
+  input:focus,
+  textarea:focus {
+    @apply outline-none border-[var(--color-gambog)]
+           shadow-[0_0_0_3px_rgba(255,166,0,0.3)];
+  }
+
 }
+
+
 
 @layer components {
   .min-h-viewport {
