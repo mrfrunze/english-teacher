@@ -30,12 +30,14 @@ const Nav = ({ links, offset = -80, isOpen, onClose }: Props) => {
             </li>
           ))}
         </ul>
-        <button
-          type="button"
+        <a
+          href="https://tinyurl.com/35thy78x"
+          target="_blank"
+          rel="noopener noreferrer"
           className="btn btn-secondary"
         >
-          Get Started
-        </button>
+          WhatsApp
+        </a>
       </nav>
       {isOpen && (
         <div
@@ -64,13 +66,15 @@ const Nav = ({ links, offset = -80, isOpen, onClose }: Props) => {
               </li>
             ))}
           </ul>
-          <div className="px-4 pb-4 w-[190px] m-auto mt-0 mb-0">
-            <button
-              type="button"
-              className="btn btn-secondary "
+          <div className="px-4 pb-4 w-[200px] m-auto mt-0 mb-0">
+            <a
+              className="btn btn-secondary"
+              href="https://tinyurl.com/35thy78x"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Get Started
-            </button>
+              WhatsApp
+            </a>
           </div>
         </div>
       )}
