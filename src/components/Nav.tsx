@@ -68,10 +68,6 @@ const Nav = ({ links, offset = -80, isOpen, onClose }: Props) => {
             <button
               type="button"
               className="btn btn-secondary "
-              onClick={() => {
-                onClose();
-                onOpenModal();
-              }}
             >
               Get Started
             </button>
